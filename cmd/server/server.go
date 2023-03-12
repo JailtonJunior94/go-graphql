@@ -28,8 +28,11 @@ func main() {
 	}
 	defer db.Close()
 
+	courseDB := database.NewCourse(db)
 	categoryDB := database.NewCategory(db)
+
 	srv := handler.NewDefaultServer(graph.NewExecutableSchema(graph.Config{Resolvers: &graph.Resolver{
+		CourseDB:   courseDB,
 		CategoryDB: categoryDB,
 	}}))
 
