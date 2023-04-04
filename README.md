@@ -1,4 +1,5 @@
-# Módulo GraphQL do curso Go Expert
+# Curso - FullCyle [Go Expert]
+## Módulo [gRPC]
 
 [gqlgen](https://gqlgen.com/)
 
